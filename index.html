@@ -181,7 +181,7 @@
     }
     }
 
-      repos = $.ajax({
+      events = $.ajax({
   type: 'GET',
   url: 'https://api.github.com/users/ozgvr/events/public',
   async: false,
@@ -189,6 +189,7 @@
   success: function(results) {
       return results;
   }}).responseJSON;
+    
   for(const event of events){
       if(event.type == "PushEvent"){
         for(const commit of event.payload.commits){
