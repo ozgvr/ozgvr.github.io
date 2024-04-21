@@ -16,12 +16,12 @@
           <div class="row mb-5">
             <div class="d-flex justify-content-between">
               <div>
-                <h1 class="fw-bold">Özgür Akın</h1>
+                <h1 class="fs-2 fw-bold">Özgür Akın</h1>
                 <h4 class="text-secondary">Software Developer</h4>
               </div>
               <div>
-                <a href="https://github.com/ozgvr"><i class="fs-1 link-secondary bi bi-github"></i></a>
-                <a href="https://linkedin.com/in/akinozgur"><i class="fs-1 link-secondary me-2 bi bi-linkedin"></i></a>
+                <a href="https://github.com/ozgvr"><i class="fs-2 link-secondary bi bi-github"></i></a>
+                <a href="https://linkedin.com/in/akinozgur"><i class="fs-2 link-secondary me-2 bi bi-linkedin"></i></a>
               </div>
             </div>
             <p class="text-body">I am a software developer based in Istanbul, Turkey with years of experience and many completed corporate and personal projects in Backend and Frontend web technologies, along with mobile and game development.</p>            
@@ -54,6 +54,12 @@
           <div class="row mb-3">
             <h6 class="text-dark">Experiences</h6>
             <hr>
+            <div class="col-12">
+              <h6 class="text-dark">OVO Dijital Servisler</h6>
+              <h6 class="text-dark">Software Developer</h6>
+              <h6 class="text-secondary">2023-2024</h6>
+              <p class="text-body" style="text-wrap:pretty; font: inherit;">Development of React web application dashboard for TrueKYC Project. Design of system architecture for serverless cloud backend on Google Firebase and integration with React frontend. Design and implementation of authentication, authorization and other access control features using security rules. Development on serverless cloud functions on Google Firebase.</p>  
+            </div>
             <div class="col-12">
               <h6 class="text-dark">Doğuş Teknoloji</h6>
               <h6 class="text-dark">Backend Developer Intern</h6>
@@ -89,7 +95,6 @@
       .then(data => {
         for(const repo of data){
           if(!repo.fork && repo.name!="ozgvr"){
-            console.log(repo);
             const col = document.createElement('div');
             col.className = "col-12 col-md-6 mb-2";
             const title = document.createElement('h6');
